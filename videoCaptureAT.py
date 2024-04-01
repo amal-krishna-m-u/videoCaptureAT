@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import time
 class videoCaptureAT:
-    def record(seconds):
-        cam = cv2.VideoCapture(0)
+    def record(seconds,index):
+        cam = cv2.VideoCapture(index)
 
         # Get the frame dimensions
         ret, frame = cam.read()

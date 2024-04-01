@@ -2,8 +2,9 @@
 # take input from user for x 
 # and record video of x seconds
 # save the video as sample.mp4
-#
-import videoCaptureAT
+# import
+from  videoCaptureAT import videoCaptureAT as vc
+
 x = int(input("Enter the duration of the video in seconds: "))
-videoCaptureAT.videoCaptureAT.record(x)
+vc.record(x,0)
 print("Video has been recorded and saved as sample.mp4")
